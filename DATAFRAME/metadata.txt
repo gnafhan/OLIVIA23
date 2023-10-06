@@ -1,0 +1,15 @@
+Provinsi : Beberapa provinsi di indonesia
+Jenis tanaman :
+0 = Padi
+1 = Jagung
+2 = Kedelai
+3 = Kacang Tanah
+4 = Kacang Hijau
+5 = Ubi Kayu
+6 = Ubi Jalar
+Luas Panen : Luas panen setiap provinsi (hektar)
+Luas Sawah : Luas sawah setiap provinsi (hektar)
+Suhu : Suhu setiap provinsi (derajat celcius)
+Curah Hujan : Curah hujan setiap provinsi (mm)
+Produksi : Produksi tanaman setiap provinsi (ton)
+Tahun : Tahun pengambilan data
