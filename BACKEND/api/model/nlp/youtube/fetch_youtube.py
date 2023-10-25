@@ -21,7 +21,11 @@ def search_videos_by_keyword(api_key, keyword):
             "title": item["snippet"]["title"],
             "description": item["snippet"]["description"],
             "thumbnail": item["snippet"]["thumbnails"]["default"]["url"],
-            "publishedAt": item["snippet"]["publishedAt"]
+            "hdThumbnail": item["snippet"]["thumbnails"]["high"]["url"],
+            "publishedAt": item["snippet"]["publishedAt"],
+            "channelId": item["snippet"]["channelId"],
+            "channelTitle": item["snippet"]["channelTitle"],
+            "liveBroadcastContent": item["snippet"]["liveBroadcastContent"],
         }
         videos.append(video)
 
@@ -35,7 +39,6 @@ def get_video_details(api_key, video_id):
         id=video_id
     )
     response = request.execute()
-
     video = {
         "id": response["items"][0]["id"],
         "title": response["items"][0]["snippet"]["title"],
@@ -56,7 +59,7 @@ def get_video_comments(api_key, video_id):
     request = youtube.commentThreads().list(
         part="id,snippet",
         videoId=video_id,
-        maxResults=100
+        maxResults=500
     )
     response = request.execute()
 

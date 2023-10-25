@@ -40,7 +40,7 @@ def get_video(id):
     if not id:
         try:
             collection = db["nlp_predictions"]
-            data = collection.find()
+            data = collection.find({}, {"comments": 0})
             if data:
                 return jsonify({
                     "status": 200,
@@ -81,6 +81,12 @@ def get_video(id):
             video["expectedTime"] = (0.05 * int(video["commentCount"]) +1)
         elif model == "accuracy":
             video["expectedTime"] = (1.362 * int(video["commentCount"]) +1)
+        else:
+            return {
+                "status": 200,
+                "message": "OK",
+                "data": video
+            }, 200
 
         # Get the comments from the YouTube API
         comments = get_video_comments(api_key, id)
