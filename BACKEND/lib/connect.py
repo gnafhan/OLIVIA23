@@ -5,7 +5,7 @@ mongodb_uri = os.getenv("MONGODB_URI")
 def connect_to_mongodb():
     try:
         client = MongoClient(mongodb_uri)  # Ganti URL sesuai dengan konfigurasi MongoDB Anda
-        db = client["nama_database"]  # Ganti nama_database dengan nama database yang Anda gunakan
+        db = client["production"]  # Ganti nama_database dengan nama database yang Anda gunakan
         return db
     except Exception as e:
         print(f"Koneksi MongoDB gagal: {e}")

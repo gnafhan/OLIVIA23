@@ -350,7 +350,7 @@ export default function Detail() {
                 </>
               ) : (
                 <>
-                  <Skeleton isLoaded={!loading} borderRadius={"lg"}>
+                  <Skeleton mt={"10px"} isLoaded={!loading} borderRadius={"lg"}>
                     <Center>
                       <Button variant="brand" onClick={onOpen} px={"50px"}>
                         Analyze Sentimen

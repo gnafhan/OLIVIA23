@@ -11,7 +11,7 @@ export function SidebarBrand() {
 
 	return (
 		<Flex alignItems='center' flexDirection='column'>
-			<Text fontWeight="bold" fontSize="30px" my='32px'>NAFHAN <span style={{ fontWeight: "normal" }}>AI</span></Text>
+			<Text fontWeight="bold" fontSize="30px" my='32px'>MABA <span style={{ fontWeight: "normal" }}>NEKAD</span></Text>
 			<HSeparator mb='20px' />
 		</Flex>
 	);

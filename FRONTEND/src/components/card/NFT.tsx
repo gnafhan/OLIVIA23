@@ -152,7 +152,7 @@ export default function NFT(props: {
 								borderRadius='70px'
 								px='24px'
 								py='5px'>
-								See {name.toLowerCase().includes('model') || name.toLocaleLowerCase().includes("nlp")? 'Model' : 'Video'}
+								See {name.toLowerCase().includes('model') || name.toLocaleLowerCase().includes("nlp")? 'Model' : 'Model'}
 							</Button>
 						</Link>
 					</Flex>

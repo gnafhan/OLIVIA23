@@ -89,6 +89,7 @@ import fear from "img/avatars/5.png";
 import happy from "img/avatars/2.png";
 import love from "img/avatars/3.png";
 import sadness from "img/avatars/6.png";
+import Regression from 'img/model/regression/regression.png'
 
 export default function UserReports() {
   // Chakra Color Mode
@@ -161,12 +162,12 @@ export default function UserReports() {
                   download="/model/nlp/"
                 />
                 <NFT
-                  name="Model 2"
-                  author="Coming soon"
+                  name="Crop Harvest Prediction"
+                  author="Predicting crop harvest with regression"
                   bidders={[]}
-                  image={Nft3}
-                  currentbid="Coming soon"
-                  download="#"
+                  image={Regression}
+                  currentbid="Up to 84%  R² Score"
+                  download="/model/regression/"
                 />
                 <NFT
                   name="Model 3"

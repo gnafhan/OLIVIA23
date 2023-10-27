@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 from lib.connect import connect_to_mongodb, close_mongodb_connection
 from api.model.nlp.nlp_api import nlp_api_bp
 from middleware.secret_key import check_api_key
+from api.model.regression.regression_api import regression_api_bp
 
 app = Flask(__name__)
 db = connect_to_mongodb()
@@ -31,6 +32,8 @@ def server_error(e):
     }, 500
 
 app.register_blueprint(nlp_api_bp, url_prefix='/api/model/nlp')
+app.register_blueprint(regression_api_bp, url_prefix='/api/model/regression')
+
 
 @app.teardown_appcontext
 def close_db_connection(exception=None):

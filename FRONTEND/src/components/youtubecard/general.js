@@ -56,7 +56,7 @@ export default function GeneralInformationYoutube(props) {
               />
             }
             name="Views"
-            value={props.viewCount}
+            value={parseInt(props.viewCount).toLocaleString('id-ID')}
             fontSize={"md"}
           />
 		</Flex>

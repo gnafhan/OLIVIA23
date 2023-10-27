@@ -59,7 +59,7 @@ def get_video_comments(api_key, video_id):
     request = youtube.commentThreads().list(
         part="id,snippet",
         videoId=video_id,
-        maxResults=500
+        maxResults=100
     )
     response = request.execute()
 

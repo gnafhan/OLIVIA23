@@ -9,6 +9,7 @@ import rating from "img/model/rating/rating.png";
 import Card from "components/card/Card";
 import Project from "views/admin/profile/components/Project";
 import Comment  from 'img/model/rating/comment.png';
+import Regression from "img/model/regression/regression.png";
 
 export default function Projects(props: { [x: string]: any }) {
   const { ...rest } = props;
@@ -41,6 +42,14 @@ export default function Projects(props: { [x: string]: any }) {
         ranking="1"
         link="/model/nlp"
         title="NLP Youtube Public Sentiment"
+      />
+      <Project
+        boxShadow={cardShadow}
+        mb="20px"
+        image={Regression}
+        ranking="2"
+        link="/model/regression"
+        title="Predicting crop harvest with regression"
       />
     </Card>
   );

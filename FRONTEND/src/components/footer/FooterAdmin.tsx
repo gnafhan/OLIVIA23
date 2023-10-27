@@ -28,9 +28,9 @@ export default function Footer() {
 				{' '}
 				&copy; {new Date().getFullYear()}
 				<Text as='span' fontWeight='500' ms='4px'>
-					Nafhan AI. All Rights Reserved. Made with love by
-					<Link mx='3px' color={textColor} href='https://nafhan.me' target='_blank' fontWeight='700'>
-						Nafhan
+					MABA NEKAD. All Rights Reserved. Made with love by
+					<Link mx='3px' color={textColor} href='/' target='_blank' fontWeight='700'>
+						TRPL UGM 23
 					</Link>
 				</Text>
 			</Text>
