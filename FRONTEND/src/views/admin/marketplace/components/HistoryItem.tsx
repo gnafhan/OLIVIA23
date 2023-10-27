@@ -20,7 +20,7 @@ export default function NFT(props: {
 	const { image, name, author, date, price, id, home } = props;
 	// Chakra Color Mode
 	const textColor = useColorModeValue('brands.900', 'white');
-	const [display, setDisplay] = useState('none');
+	const [display, setDisplay] = useState<any>('none');
 	const bgItem = useColorModeValue(
 		{ bg: 'white', boxShadow: '0px 40px 58px -20px rgba(112, 144, 176, 0.12)' },
 		{ bg: 'navy.700', boxShadow: 'unset' }
